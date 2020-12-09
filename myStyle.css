@@ -1,0 +1,14 @@
+#bananaOutput, #englishInput{
+    border: 1px solid black;
+    height: 10vh;
+    padding:0.5rem;
+    margin: 1rem;
+    display: block;
+    font-size: larger;
+}
+
+#btn-translate{
+    margin: 0.1rem 2rem 2rem 1rem;
+    padding: 2px;
+    display: block;
+}
