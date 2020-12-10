@@ -1,6 +1,6 @@
 :root{
     font-family: 'Caveat', cursive;
-    --primary: #F2C94C;
+    --primary: #818CF8;
 }
 
 body{
@@ -25,6 +25,22 @@ h1{
 
 #englishInput{
     margin-top:2rem;
+}
+
+#pirate{
+    height: 2.5rem;
+    width:2.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+#wheel{
+    height: 2rem;
+    width: 2rem;
+    display: inline;
+    position: relative;
+    top:0.3rem;
+    right: 0.5rem;
 }
 
 #bananaOutput, #englishInput{

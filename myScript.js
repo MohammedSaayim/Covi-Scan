@@ -2,7 +2,7 @@ var btnTranslate= document.querySelector("#btn-translate");
 var input= document.querySelector("#englishInput")
 var output= document.querySelector('#bananaOutput')
 console.log(input.value)
-var url="https://api.funtranslations.com/translate/minion.json?text="
+var url="https://api.funtranslations.com/translate/pirate.json?text="
 
 function constructUrl(inputTxt){
     url=url+inputTxt
