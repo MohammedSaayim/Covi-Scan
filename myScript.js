@@ -17,7 +17,9 @@ function errorHandler(error){
 
 
 
+function addEventHandler(){
 fetch(constructUrl(input.value))
+
 .then(function responseHandler(response){
     return response.json()
 })
@@ -25,18 +27,14 @@ fetch(constructUrl(input.value))
 .then(function logJson(json){
     console.log(json.contents.translated)
     var outputTxt=json.contents.translated
-    return outputTxt
+    output.innerText=outputTxt
+    console.log(output.innerText)
+    .catch(errorHandler)
 })
 
-.then(
-function addEventHandler(outputTxt){
-    output.innerText=outputTxt
-    console.log(innerText)
-    })
+}
 
 btnTranslate.addEventListener("click",  addEventHandler)
 
-var textArea= document.querySelector("textArea");
 
-
-
+console.log(btnTranslate)
