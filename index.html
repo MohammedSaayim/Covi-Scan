@@ -18,14 +18,22 @@
     <div id=page-container>
     <div id=content-wrap>
     <h1> CoviScan<img id="coviscanLogo" src="coviscanLogo.png"></h1>
-    <textarea id="englishInput" placeholder= "put your message here which you want to convert to pirate language" ></textarea>
+    <!-- <textarea id="englishInput" placeholder= "put your message here which you want to convert to pirate language" ></textarea>
     <button id="btn-translate">
         Translate
     </button>
     
     <div style="margin:1rem; font-size: 1.5rem; text-align:center; ">Translation will come here👇</div>
-    <div id="bananaOutput"></div>
-    </div>
+    <div id="bananaOutput"></div> -->
+    
+
+    <form method="POST"  action="https://covid19-detection-api.herokuapp.com/api/image" enctype="multipart/form-data"> 
+        <input type="text" name="name" id="input_name"> <input type="file" name="image" id="input_image" required> 
+        <button type="submit" id="orig_submit_btn" style="display: none;">Predict</button> 
+        <button id="form-button">Upload and Predict</button> 
+    </form> 
+    <div id="result-div"></div>
+    </div> 
     <footer id="footer">
        
         <div style="font-size: xx-large; margin-top:1.5rem;">About</div>
